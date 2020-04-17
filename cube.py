@@ -24,12 +24,20 @@ def cube_builder(length, dim):
         hypercube = np.add(hypercube, (dim+n+1)*np.flip(new_face))
     return hypercube
 
-def sides(cube):
+def sides_obj(cube):
     sides = [[0 for x in range(cube.shape[1])] for x in range(cube.ndim)]
     for i in range(cube.ndim):
         for j in range(cube.shape[1]):
             obj = tuple([slice(None) for x in range(i)] + [j])
             sides[i][j] = obj
+    return sides
+
+def sides(cube):
+    sides = [[0 for x in range(cube.shape[1])] for x in range(cube.ndim)]
+    for i in range(cube.ndim):
+        for j in range(cube.shape[1]):
+            obj = tuple([slice(None) for x in range(i)] + [j])
+            sides[i][j] = cube[obj]
     return sides
 
 class Cube:
@@ -38,12 +46,13 @@ class Cube:
         self.dim = dim
         self.tensor = cube_builder(length, dim)
         self.sides = sides(self.tensor)
+        self.side_obj = sides_obj(self.tensor)
 
     def rotate(self, axis, index, k=1):
         # side is an int between 1 and length
         # axes is a tuple of dimension "dim-1" containing all axes not rotated over.
-        self.tensor[self.sides[axis][index]] = np.rot90(self.tensor[self.sides[axis][index]], k)
+        self.tensor[self.side_obj[axis][index]] = np.rot90(self.tensor[self.side_obj[axis][index]], k)
         if index == 1:
-            self.tensor[self.sides[axis][0]] = np.rot90(self.tensor[self.sides[axis][0]], k)
+            self.tensor[self.side_obj[axis][0]] = np.rot90(self.tensor[self.side_obj[axis][0]], k)
         if index == self.length:
-            self.tensor[self.sides[axis][self.length+1]] = np.rot90(self.tensor[self.sides[axis][self.length+1]], k)
+            self.tensor[self.side_obj[axis][self.length+1]] = np.rot90(self.tensor[self.side_obj[axis][self.length+1]], k)
