@@ -57,11 +57,11 @@ class Cube:
         if index == self.length:
             self.tensor[self.side_obj[axis][self.length+1]] = np.rot90(self.tensor[self.side_obj[axis][self.length+1]], k)
     
-        def scramble(self, n=None):
-            if n == None:
-                n = 10 * self.length * self.dim
-            for x in range(n):
-                axis = randint(0, self.dim - 1)
-                index = randint(1, self.length)
-                k = randint(1, 3)
-                self.rotate(axis, index, k)
+    def scramble(self, n=None):
+        if n == None:
+            n = 10 * self.length * self.dim
+        for x in range(n):
+            axis = randint(0, self.dim - 1)
+            index = randint(1, self.length)
+            k = randint(1, 3)
+            self.rotate(axis, index, k)
