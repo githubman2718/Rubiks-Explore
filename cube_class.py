@@ -5,10 +5,12 @@ from collections import Counter
 
 with open('datas/h_2x2x2.pkl', 'rb') as half_dic:
     #This dictionary maps a 2x2x2 cube's ID to the number of moves requred to solve it under the half turn metric.
+    #File at https://www.dropbox.com/sh/ef93m1riegor6i4/AABFlgJUDizUUU3jGxL69o-Da?dl=0
     h_dic = pickle.load(half_dic)
 
 with open('datas/q_2x2x2.pkl', 'rb') as quarter_dic:
     #This dictionary maps a 2x2x2 cube's ID to the number of moves requred to solve it under the quarter turn metric.
+    #File at https://www.dropbox.com/sh/ef93m1riegor6i4/AABFlgJUDizUUU3jGxL69o-Da?dl=0
     q_dic = pickle.load(quarter_dic)
 
 def cube_builder(length, dim):
