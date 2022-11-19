@@ -1,4 +1,4 @@
-# rubik
+# Rubik's Library
 
 This project provides a library that supports the creation and manipulation of generalized rubiks cubes of arbitrary length and spacial dimension. The cubes are represented as numpy arrays. The library can be used to develop and test new algorithms to solve the cube, and to explore its features. A function that always finds the optimal solution to the 2x2x2 cube is provided.
 
