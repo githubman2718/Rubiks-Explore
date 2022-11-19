@@ -5,12 +5,14 @@ This project provides a library that supports the creation and manipulation of g
 This project requires two cube datasets which are available for download at [my dropbox](https://www.dropbox.com/sh/ef93m1riegor6i4/AABFlgJUDizUUU3jGxL69o-Da?dl=0).
 
 Some essential terminology:
+
 [half turn metric](https://www.speedsolving.com/wiki/index.php/Metric#HTM)
+
 [quarter turn metric](https://www.speedsolving.com/wiki/index.php/Metric#QTM)
 
 Create a cube by instantiating the "Cube" class.
 
-Class Cube(length=3, dim=3)
+Class **Cube**(length=3, dim=3)
 
 Then manipulate the cube with the available methods.
 
