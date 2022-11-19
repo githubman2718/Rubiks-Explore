@@ -12,8 +12,8 @@ Class **Cube**(length=3, dim=3)<br />
 Creates a cube of the specified length and spacial dimention.
 
 **rotate**(axis, index, k=1)<br />
-Rotates the cube by k quarter turns along the specified axis and index.
-0<=axis<dim
+Rotates the cube by k quarter turns along the specified axis and index.<br />
+0<=axis<dim<br />
 0<=index<len
 
 **scramble**([n]):<br />
