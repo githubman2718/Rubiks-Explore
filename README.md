@@ -7,7 +7,7 @@ Some essential terminology:<br />
 [quarter turn metric](https://www.speedsolving.com/wiki/index.php/Metric#QTM)
 
 Class **Cube**(length=3, dim=3)<br />
-Creates a cube of the specified length and spacial dimention.
+Creates a cube of the specified length and spacial dimension.
 
 **rotate**(axis, index, k=1)<br />
 Rotates the cube by k quarter turns along the specified axis and index.<br />
