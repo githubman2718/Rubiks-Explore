@@ -78,4 +78,4 @@ Returns a list of all rotations of the cube under the quarter turn metric.
 Returns a list of all rotations of the cube under the half turn metric.
 
 
-The source code and readme for this project are released under licensed under [CC00](https://creativecommons.org/share-your-work/public-domain/cc0/) - No rights reserved.
+The source code and readme for this project are released under [CC00](https://creativecommons.org/share-your-work/public-domain/cc0/) - No rights reserved.
