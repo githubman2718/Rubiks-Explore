@@ -22,7 +22,7 @@ Rotates the cube by k quarter turns along the specified axis and index.
 0<=index<len
 
 **scramble**([n]):
-Randomly rotates the cube n times. If no argument is passed, the cube is undergoes random rotation 10*len*dim times.
+Randomly rotates the cube n times. If no argument is passed, the cube is undergoes random rotation 10\*len\*dim times.
 
 **is_same_as**(target):
 Returns True if the source cube is identical to the target cube. Returns False if the source cube is not identical to the target cube
