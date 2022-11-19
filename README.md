@@ -16,72 +16,72 @@ Class **Cube**(length=3, dim=3)
 
 Then manipulate the cube with the available methods.
 
-**rotate**(axis, index, k=1)
+**rotate**(axis, index, k=1)<br />
 Rotates the cube by k quarter turns along the specified axis and index.
 0<=axis<dim
 0<=index<len
 
-**scramble**([n]):
+**scramble**([n]):<br />
 Randomly rotates the cube n times. If no argument is passed, the cube is undergoes random rotation 10\*len\*dim times.
 
-**is_same_as**(target):
+**is_same_as**(target):<br />
 Returns True if the source cube is identical to the target cube. Returns False if the source cube is not identical to the target cube
 
-**solved**():
+**solved**():<br />
 Returns a boolean value to indicate if the cube is in the solved position.
 
-**ID**():
+**ID**():<br />
 Reversibly maps the cube to a string that uniquely identifies it.
 
-**assume_ID**(ID):
+**assume_ID**(ID):<br />
 The cube assumes the position associated with the passed string. This is the inverse of the ID function.
 
-**hdepth**():
+**hdepth**():<br />
 Returns the depth of the cube under the half turn metric. Only works for the 2x2x2 cube.
 
-**qdepth**():
+**qdepth**():<br />
 Returns the depth of the cube under the quarter turn metric. Only works for the 2x2x2 cube.
 
-**hless**():
+**hless**():<br />
 Returns the list of rotations that take the cube nearer to solution the half turn metric. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**qless**():
+**qless**():<br />
 Returns the list of rotations that take the cube nearer to solution the quarter turn metric. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**hsame**():
+**hsame**():<br />
 Returns the list of rotations that take the cube to another position of the same depth under the half turn metric. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**qsame**():
+**qsame**():<br />
 Returns the list of rotations that take the cube to another position of the same depth under the quarter turn metric. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**hgreater**():
+**hgreater**():<br />
 Returns the list of rotations that take the cube to another position of a greater depth under the half turn metric. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**hgreater**():
+**hgreater**():<br />
 Returns the list of rotations that take the cube to another position of a greater depth under the quarter turn metric. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**qsolve**():
+**qsolve**():<br />
 Returns a list of rotations (*axis, index, k*) which solve the cube under the quarter turn metric in the minimum number of moves. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**hsolve**():
+**hsolve**():<br />
 Returns a list of rotations (*axis, index, k*) which solve the cube under the half turn metric in the minimum number of moves. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**qsolve_to**(target):
+**qsolve_to**(target):<br />
 Returns a set of rotations to bring the source cube to the target cube in the minimum number of moves under the quarter turn metric. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**hsolve_to**(target):
+**hsolve_to**(target):<br />
 Returns a set of rotations to bring the source cube to the target cube in the minimum number of moves under the half turn metric. Only works for the 2x2x2 cube. Each rotation takes the form (axis, index, k).
 
-**qdistance**(target):
+**qdistance**(target):<br />
 Returns the distance between the source cube and the target cube under the quarter turn metric.
 
-**hdistance**(target):
+**hdistance**(target):<br />
 Returns the distance between the source cube and the target cube under the half turn metric.
 
-**qrotations**(target):
+**qrotations**(target):<br />
 Returns a list of all rotations of the cube under the quarter turn metric.
 
-**hrotations**(target):
+**hrotations**(target):<br />
 Returns a list of all rotations of the cube under the half turn metric.
 
 
