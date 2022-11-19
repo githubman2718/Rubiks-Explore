@@ -1,8 +1,6 @@
 # Rubik's Library
 
-This project provides a library that supports the creation and manipulation of generalized rubiks cubes of arbitrary length and spacial dimension. The cubes are represented as numpy arrays. The library can be used to develop and test new algorithms for solving the cube, and to investigate its properties.
-
-This project requires two cube datasets which are available for download at [my dropbox](https://www.dropbox.com/sh/ef93m1riegor6i4/AABFlgJUDizUUU3jGxL69o-Da?dl=0).
+This project provides a library that supports the creation and manipulation of generalized rubiks cubes of arbitrary length and spacial dimension. The cubes are represented as numpy arrays. The library can be used to develop and test new algorithms for solving the cube, and to investigate its properties. This project requires two cube datasets which are available for download at [my dropbox](https://www.dropbox.com/sh/ef93m1riegor6i4/AABFlgJUDizUUU3jGxL69o-Da?dl=0).
 
 Some essential terminology:<br />
 [half turn metric](https://www.speedsolving.com/wiki/index.php/Metric#HTM)<br />
