@@ -109,13 +109,13 @@ class Cube:
             return False
 
     def ID(self):
-        #Hashes the cube
-        string = ''
+        #encodes the cube as a string
+        encoding = []
         val_len = int(2*self.dim/5)
         for value in self.cube[self.nonzero]:
             new_val = str(value).zfill(val_len)
-            string += new_val
-        return string
+            encoding.append(new_val)
+        return "".join(encoding)
 
     def assume_ID(self, ID):
         #self.cube goes to value of ID
